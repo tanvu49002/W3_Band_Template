@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Website</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon/heart-solid.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="assets/fontawesome/fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <!-- header -->
+        <header class="header js-header">
+            <ul class="nav">
+                <li><a href="#sliders">Home</a></li>
+                <li><a href="#members">Member</a></li>
+                <li><a href="#tickets">Tour</a></li>
+                <li><a href="#contacts">Contact</a></li>
+                <li class="more">
+                    <a href="#">
+                        More
+                        <i class="nav-drop-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-button">
+                <i class="nav-search-icon ti-search"></i>
+            </div>
+            <div class="mobile-menu-btn js-mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+        </header>
+        <!-- slider -->
+        <div id="sliders" class="slider">
+            <div class="slider-text">
+                <h2 class="text-heading">Slider</h2>
+                <div class="text-desciption">This is content of slider</div>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="content">
+            <!-- Member Section --> 
+            <div id="members" class="content-section">
+                <h2 class="section-heading">Members</h2>
+                <div class="sub-heading">This is list of all members</div>
+                <div class="member-list">
+                    <div class="member-item member-item-mobile">
+                        <p class="member-name">Name</p>
+                        <img src="/assets/products/product1.jpg" alt="product" class="member-image">
+                    </div>
+                    <div class="member-item member-item-mobile">
+                        <p class="member-name">Name</p>
+                        <img src="/assets/products/product1.jpg" alt="product" class="member-image">
+                    </div>
+                    <div class="member-item member-item-mobile">
+                        <p class="member-name">Name</p>
+                        <img src="/assets/products/product1.jpg" alt="product" class="member-image">
+                    </div>
+                </div>
+            </div>
+            <!-- ticket section -->
+            <div id="tickets" class="ticket-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">Tickets</h2>
+                    <div class="sub-heading text-white">You can buy your tickets here</div>
+                    <ul class="ticketlist">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quantity">3</span></li>
+                    </ul>
+                    <div class="place-list">
+                        <div class="place-item">
+                            <img src="/assets/place/NewYork.jpg" alt="NewYork-ticket" class="place-image">
+                            <div class="ticket-description">
+                                <h3 class="place-name">New York</h3>
+                                <p class="date-ticket">Fri 27 Nov 2016</p>
+                                <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="buy-button js-buy-ticket btn">Buy ticket</button>
+                            </div>
+                        </div>
+                        <div class="place-item">
+                            <img src="/assets/place/Paris.jpg" alt="Paris-ticket" class="place-image">
+                            <div class="ticket-description">
+                                <h3 class="place-name">Paris</h3>
+                                <p class="date-ticket">Sat 28 Nov 2016</p>
+                                <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="buy-button js-buy-ticket btn">Buy ticket</button>
+                            </div>
+                            
+                        </div>
+                        <div class="place-item">
+                            <img src="/assets/place/SanFrancisco.jpg" alt="SanFrancisco-ticket" class="place-image">
+                            <div class="ticket-description">
+                                <h3 class="place-name">San Francisco</h3>
+                                <p class="date-ticket">Sun 29 Nov 2016</p>
+                                <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="buy-button js-buy-ticket btn">Buy ticket</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contact section -->
+            <div id="contacts" class="content-section">
+                <h2 class="section-heading">Contact</h2>
+                <div class="sub-heading">Contact with us here</div>
+                <div class="contact-content">
+                    <div class="contact">
+                        <p class="contact-detail">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Chicago, US
+                        </p>
+                        <p class="contact-detail">
+                            <i class="fa-solid fa-phone"></i>
+                            Phone: <a href="tel:0368888888">0368888888</a>
+                        </p>
+                        <p class="contact-detail">
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: <a href="mailto:tanvu4902@gmail.com">tanvu4902@gmail.com</a>
+                        </p>
+                    </div>
+                    <form class="message">
+                        <div class="name-email-wrap">
+                            <input type="text" id="name" class="name form" required placeholder="Name">
+                            <input type="email" id="email" class="email form" required placeholder="Email">
+                        </div>
+                        <div class="message-wrap">
+                            <input type="text" id="message" class="message-detail form" required placeholder="Message">
+                        </div>
+                        <button class="send-button btn js-sendMessage-btn">SEND</button>
+                    </form>
+                </div>
+            </div>
+            <!-- map section -->
+            <div class="map-section">
+                <img src="assets/place/map.jpg" alt="Map">
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-socialmedia-icon">
+                <a class="footer-social-link" href="">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a class="footer-social-link" href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="footer-social-link" href="">
+                    <i class="fa-brands fa-snapchat"></i>
+                </a>
+                <a class="footer-social-link" href="">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+                <a class="footer-social-link" href="">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a class="footer-social-link" href="">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+            <p class="copyright">Powered by <a href="" class="me">NTV</a></p>
+        </footer>
+    </div>
+    <!-- modal buy tickets -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+                <i class="modal-heading-icon ti-bag"></i>
+                Tickets
+            </header>
+            <div class="modal-body">
+                <label for="tiket-quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>    
+                    Tickets, $15 per person
+                </label>
+                <input id="tiket-quantity" type="text" class="modal-input" placeholder="How many?">
+                <label for="tiket-email" class="modal-label">
+                    <i class="ti-user"></i>    
+                    Send To
+                </label>
+                <input id="tiket-email" type="email" class="modal-input" placeholder="Enter your email">
+                <button class="buy-tickets">
+                    Pay
+                    <i class="ti-check"></i>
+                </button>
+            </div>
+            <footer class="modal-footer">
+                <button class="modal-close-button js-modal-close">
+                    Close
+                    <i class="ti-close"></i>
+                </button>
+                <p class="modal-help">Need <a href="">help?</a></p>
+            </footer>
+        </div>
+    </div>
+    <button class="back-to-head js-back-to-head">
+        <i class="fas fa-angle-double-up"></i>
+    </button>
+    <!-- modal-success -->
+    <div class="modal-success js-modal-success">
+        <div class="modal__container--success js-modalContainer-success">
+            <div class="modal__close--success js-closeSuccess-btn">
+                <i class="ti-close"></i>
+            </div>
+            <div class="modal__body--success">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <p class="modal-desc">
+                    Send message success
+                </p>
+                <div class="footer-success">
+                    <button class="confirm-btn js-confirm-btn">OK</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- backend -->
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket');
+        const modal = document.querySelector('.js-modal');
+        const closeModalBtnList = document.querySelectorAll('.js-modal-close');
+        const modalContainer = document.querySelector('.js-modal-container');
+        const header = document.querySelector('.js-header');
+        const backToHeadBtn = document.querySelector('.js-back-to-head');
+        const menuBtn = document.querySelector('.js-mobile-menu-btn');
+        const menuItems = document.querySelectorAll('.nav li a[href*="#"]');
+        const sendMessBtn = document.querySelector('.js-sendMessage-btn');
+        const modalSuccess = document.querySelector('.js-modal-success');
+        const confirmBtn = document.querySelector('.js-confirm-btn');
+        const modalSuccessClose = document.querySelector('.js-closeSuccess-btn');
+        const modalContainerSuccess = document.querySelector('.js-modalContainer-success');
+        var headerHeight = header.clientHeight;
+        function showMobileMenu() {
+            let isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+        function openBuyTicketModal () {
+            modal.classList.add('open');
+        }
+        function closeBuyTicketModal () {
+            modal.classList.remove('open');
+        }
+        
+        // function changeColorHeader (){
+        //     let scrollTrigger = 600;
+        //     if (window.scrollY > scrollTrigger) {
+        //         header.classList.add('scroll');
+        //     }
+        //     else {
+        //         header.classList.remove('scroll');
+        //     }
+        // }
+        function backToHead() {
+            window.scrollTo(0,0)
+        }
+        function sendMessSuccess () {
+            modalSuccess.classList.add('open');
+        }
+        function closeMessSuccess () {
+            modalSuccess.classList.remove('open');
+        }
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', openBuyTicketModal);
+        }
+        for (const closebtn of closeModalBtnList) {
+            closebtn.addEventListener('click', closeBuyTicketModal);
+        }
+        sendMessBtn.addEventListener('click', function () {
+            let nameForm = document.getElementById('name').value;
+            let emailForm = document.getElementById('email').value;
+            let messageForm = document.getElementById('message').value;
+            if (nameForm != "" && emailForm != "" && messageForm != "") {
+                event.preventDefault();
+                sendMessSuccess();
+            }
+        });
+        confirmBtn.addEventListener('click', closeMessSuccess);
+        modalSuccessClose.addEventListener('click', closeMessSuccess);
+        modalSuccess.addEventListener('click', closeMessSuccess);
+        // window.addEventListener('scroll', changeColorHeader);
+        modal.addEventListener('click', closeBuyTicketModal);
+        backToHeadBtn.addEventListener('click', backToHead);
+        menuBtn.addEventListener('click', showMobileMenu);
+        for (const menuItem of menuItems) {
+            menuItem.addEventListener('click', function () {
+                let haveChild = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (haveChild) {
+                    event.preventDefault();
+                }
+                else {
+                    header.style.height = null;
+                }
+            })
+        }
+        // huỷ tính lan truyền 
+        modalContainerSuccess.addEventListener('click', function (event) {event.stopImmediatePropagation()})
+        modalContainer.addEventListener('click', function (event) {event.stopImmediatePropagation()})
+
+    </script>
+</body>
+</html>

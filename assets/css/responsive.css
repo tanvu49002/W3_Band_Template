@@ -1,0 +1,114 @@
+/* Responsive */
+/* PC */
+@media (min-width: 64em) {
+    .mobile-menu-btn {
+        display: none;
+    }
+}
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+    .btn, .form {
+        padding: 16px;
+    }
+    .footer-social-link {
+        font-size: 40px;
+        margin: 0 8px;
+    }
+    .footer .copyright {
+        font-size: 24px;
+    }
+    .footer .me {
+        padding: 12px 0;
+    }
+}
+/* Tablet */
+@media (min-width: 46.3125em) and (max-width: 63.9375em) {
+    .mobile-menu-btn {
+        display: none;
+    }
+    .contact .contact-detail {
+        line-height: 2;
+    }
+}
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .header {
+        background-color: black;
+        overflow: hidden;
+    }
+    .nav {
+        display: block;
+    }
+    .nav > li {
+        display:  block;
+    }
+    .nav > li:first-child {
+        display: inline-block;
+    }
+    .nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    .nav .subnav a{
+        color: white;
+        background-color: #333;
+        padding: 5px 40px;
+    }
+    .search-button {
+        display: none;
+    }
+    .mobile-menu-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .slider {
+        margin-top: 58px;
+    }
+    .content .member-list {
+        padding-top: 15px;
+    }
+    .member-list .member-item-mobile {
+        margin-top: 32px;
+        width: 100%;
+    }
+    .content .member-item .member-image {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .place-list {
+        margin-top: 16px;
+    }
+    .place-item {
+        width: 100%;
+        margin-top: 16px;
+    }
+    .buy-button {
+        width: 100%;
+    }
+    .contact-content {
+        display: block;
+    }
+    .contact-content .contact,
+    .contact-content .message {
+        width: 100%;
+    }
+    .contact-content .contact {
+        margin-bottom: 32px;
+        line-height: 2;
+    }
+    .contact-content .message .name-email-wrap {
+        display: block;
+    }
+    .name-email-wrap .name,
+    .name-email-wrap .email {
+        width: 100%;
+    }
+    .name-email-wrap .name {
+        margin-bottom: 8px;
+    }
+    .send-button {
+        width: 100%;
+    }
+}

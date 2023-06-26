@@ -1,0 +1,566 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+.text-white {
+    color: white !important;
+}
+.main {
+    overflow: hidden;
+}
+/* scrollbar */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom,#77A1D3,#79CBCA, #E684AE, #fc6767);
+    border-radius: 4px;
+}
+body::-webkit-scrollbar-track {
+    background-color: whitesmoke;
+    border-radius: 4px;
+}
+/* header */
+.header{
+    height: 58px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    
+}
+.header.scroll {
+    background-color: black;
+    box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
+}
+/* navigation */
+
+.nav {
+    height: 100%;
+    display: inline-block;
+}
+.nav li{
+    display: inline-block;
+}
+.nav .more:hover .subnav{
+    display: block;
+}
+.subnav a::before {
+    content: "";
+    position: absolute;
+}
+.nav .subnav li:hover a,
+.nav > li:hover > a{
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.nav > li > a{
+    color: white;
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 58px;
+    display: block;
+    text-transform: uppercase;
+}
+.nav, .subnav {
+    list-style-type: none;
+}
+.nav .subnav{
+    position:absolute;
+    background-color: white;
+    display: none;
+    box-shadow: 1px 1px 20px black;
+}
+.nav .subnav li {
+    display: block;
+    border: 0;
+}
+.nav .subnav a{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 16px;
+    display: block;
+    border: 0;
+}
+.nav .more .nav-drop-down {
+    font-size: 12px;
+}
+/* search button */
+.search-button .nav-search-icon,
+.mobile-menu-btn .menu-icon {
+    font-size: 20px;
+    color: white;
+    line-height: 58px;
+}
+.search-button, .mobile-menu-btn{
+    padding: 0 21px;
+    background-color: transparent;
+    float: right;
+}
+.mobile-menu-btn {
+    background-color: black;
+}
+.search-button:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+.mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+.mobile-menu-btn:hover .menu-icon {
+    color: black;
+}
+/* slider */
+.slider{
+    padding-top: 50%;
+    width: 100%;
+    background: url(../slider/slider1.jpg) top / cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.slider .text-heading {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+.slider .text-desciption {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+    text-shadow: 0 0 1px black;
+}
+.slider .slider-text {
+    position: absolute;
+    bottom: 50px;
+    right: 0;   
+    left: 0;
+}
+/* member-content */
+.content .content-section{
+    padding: 64px 16px 112px;
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content .section-heading{
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+.content .sub-heading {
+    margin-top: 16px;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+.section-heading, .sub-heading {
+    text-align: center;
+}
+.content .member-item .member-image {
+    display: block;
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+    border-radius: 4px;
+    padding: 0 8px;
+}
+.content .member-list {
+    overflow: hidden;
+    padding-top: 47px;
+}
+.content .member-item {
+    display: block;
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+/* ticket-content */
+.ticket-section {
+    background-color: black;
+}
+.ticketlist {
+    background-color: white;
+    margin-top: 47px;
+}
+.ticketlist li {
+    list-style-type: none;
+    color: gray;
+    font-size: 16px;
+    padding: 13px 16px;
+    border-bottom: 1px solid lightgray;
+}
+.ticketlist .sold-out {
+    color: white;
+    background-color: #f44336;
+    padding: 4px 8px;   
+    text-align: center;
+    margin-left: 10px;
+}
+.ticketlist .quantity {
+    padding: 4px 8px;
+    float: right;
+    margin: -3px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 16px;
+}
+/* place */
+.place-list {
+    margin-top: 32px;
+    overflow: hidden;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.place-item {
+    float: left;
+    width: calc(100%/3);
+    padding: 0 8px;
+    color: #000;
+}
+.place-name {
+    font-size: 15px;
+}
+.date-ticket {
+    color: gray;
+    margin-top: 15px;
+}
+.place-description {
+    font-weight: 300;
+    margin-top: 15px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.ticket-description {
+    font-size: 15px;
+    padding: 16px 16px;
+    background-color: white;
+}
+.buy-button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 11px 16px;
+    background-color: black;
+    border-radius: 4px;
+    border: 0;
+}
+.place-image {
+    display: block;
+    width: 100%;
+}
+.place-image:hover {
+    opacity: 0.6;
+}
+.buy-button:hover {
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+}
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal.open{
+    display: flex;
+}
+.modal-container {
+    background-color: white; 
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalappearence ease 0.3s;
+}
+.modal .modal-header {
+    background-color: #009688;
+    height: 130px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 4px;
+    color: white;
+}
+.modal-heading-icon {
+    margin-right: 10px;
+}
+.modal-close {
+    position: absolute;
+    padding: 15px 15px;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+    color: white;
+}
+.modal-close:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+.modal-body {
+    padding: 16px;
+}
+.modal-label, .buy-tickets, .modal-input {
+    display: block;
+}
+
+.modal-label {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.modal-input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc
+}
+.buy-tickets {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    background-color: #009688;
+    border: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.buy-tickets:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: black;
+}
+.modal-footer {
+    padding: 16px;
+}
+.modal-footer .modal-close-button {
+    font-size: 15px;
+    background-color: #f44336;
+    border: 0;
+    padding: 10px;
+    font-weight: bold;
+}
+.modal-close-button:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+.modal-footer .modal-help {
+    display: block;
+    float: right;
+    padding: 10px;
+}
+.modal-footer a {
+    color: #009688;
+}
+/* modal-success */
+.modal-success {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+.modal-success.open {
+    display: flex;
+}
+.modal__container--success {
+    background-color: white;
+    width: 400px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    border-radius: 6px;
+}
+.modal__close--success {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px 16px;
+}
+.modal__close--success:hover {
+    cursor: pointer;
+    color: red;
+}
+.modal__body--success {
+    height: 100%;
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+}
+.success-icon {
+    display: flex;
+    justify-content: center;
+    color: green;
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+.modal-desc {
+    text-align: center;
+}
+.footer-success {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+.confirm-btn {
+    padding: 16px 28px;
+    margin-bottom: 16px;
+    border: 0;
+    border-radius: 4px;
+}
+.confirm-btn:hover { 
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+/* contact */
+.contact-content {
+    display: flex;
+    padding-top: 47px;
+    overflow: hidden;
+}
+.contact .contact-detail {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+.contact {
+    width: 50%;
+}
+.name-email-wrap {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    display: flex;
+    
+}
+.name, .email {
+    height: 40px;
+    width: calc(100%/2);
+}
+.name {
+    margin-right: 16px;
+}
+.message {
+    display: block;
+    width: 50%;
+}
+
+.message-detail {
+    width: 100%;
+    height: 40px;
+
+}
+.name, .email, .message-detail {
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+.fa-solid.fa-location-dot {
+    margin-right: 4px;
+}
+.send-button {
+    display: block;
+    padding: 10px 16px;
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    margin: 16px 0;
+    float: right;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.send-button:hover {
+    background-color: #ccc;
+    color: black;
+}
+/* map */
+.map-section img {
+    display: block;
+    width: 100%;
+}
+/* footer */
+.footer{
+    background-color: #f1f1f1;
+    display: block;
+    padding: 64px 16px;
+    font-size: 24px;
+    text-align: center;
+}
+.footer .footer-social-link  {
+    color: gray;
+    text-decoration: none;
+}
+.footer-social-link:hover {
+    opacity: 0.6;
+}
+.footer .copyright {
+    color: gray;
+    margin: 15px 0;
+    font-size: 15px;
+}
+.footer .copyright .me {
+    color: gray;
+}
+/* back to head */
+.back-to-head {
+    background-color: darksalmon;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    z-index: 1;
+    box-shadow: 1px 1px 10px black;
+}
+.back-to-head:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+/* modal appearence */
+@keyframes modalappearence {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
